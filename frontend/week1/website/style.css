@@ -1,0 +1,215 @@
+
+.navbar {
+  background-color: #505cdc;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.navbar .logo {
+  float: left;
+  padding: 14px 16px;
+}
+.card a{
+  color: #4A99D3;
+font-size: 14px;
+font-family: Cambay;
+line-height: 30px;
+display: block;
+text-decoration: none;
+}
+
+/* CSS for the carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 400px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  margin-left: 350px;
+  margin-right: 350px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel-btn.prev {
+  left: 20px;
+}
+
+.carousel-btn.next {
+  right: 20px;
+}
+
+
+/* CSS for sections */
+
+
+/* CSS for client testimonial */
+.testimonial {
+  text-align: center;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.testimonial button{
+  margin-bottom: 15px;
+
+}
+
+/* CSS for footer */
+footer {
+  background-color: #7023cd;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+ .card{
+width: 300px;
+height: 425px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 5px 20px 50px 0px rgba(74, 153, 211, 0.20);
+color: rgba(255, 255, 255, 1);
+}
+
+.card img{
+  width: 130.951px;
+  height: 132px;
+  flex-shrink: 0;
+  margin-left: 85px;
+
+}
+.card{
+  padding-top: 20px;
+  padding-left: 48px;
+}
+.card h3{
+  color: var(--text-color, #0F001A);
+font-size: 20px;
+font-family: Cambay;
+line-height: 30px;
+letter-spacing: 0.4px;
+}
+.card p{
+  display: flex;
+width: 284px;
+height: 103px;
+flex-direction: column;
+flex-shrink: 0;
+color: var(--text-color, #0F001A);
+font-size: 16px;
+font-family: Cambay;
+line-height: 26px;
+opacity: 0.6000000238418579;
+}
+.left{
+  margin-right: 50% ;
+  margin-left: auto;
+  margin-top: -10%;
+}
+.right{
+  margin-left: auto;
+  margin-right: 300px;
+  margin-top: -10%;
+}
+
+.sec3{width: 100%;
+  height: 376px;
+  flex-shrink: 0;
+  background: rgba(74, 153, 211, 0.10);
+}
+.how{
+  color: #4A99D3;
+text-align: center;
+padding-top: 40px;
+font-size: 26px;
+font-family: Cambay;
+font-weight: 700;
+}
+.sec2{
+width: 1440px;
+height: auto;
+margin-left: 200px;
+padding-top: 150 px;
+}
+
+.what{
+  color: #260041;
+font-size: 36px;
+font-family: Cambay;
+line-height: 46px;
+letter-spacing: 1px;
+text-align:center;
+width: 344px;
+}
+
+.card1 {
+  text-align: center;
+  width: 33%;
+}
+.card1 img{
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.card1 p{
+color: var(--text-color, #0F001A);
+text-align: center;
+font-size: 16px;
+font-family: Cambay;
+line-height: 26px;
+}
+
+.tab1cards {
+  display: flex;
+  flex-direction: row;
+}
