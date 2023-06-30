@@ -212,3 +212,6 @@ line-height: 26px;
   display: flex;
   flex-direction: row;
 }
+#side{
+  margin-left: 15%;
+}
