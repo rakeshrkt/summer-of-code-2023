@@ -8,27 +8,41 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
-      margin: 0;
       padding: 0;
     }
-    header {
-      background-color: #7023cd;
-      color: #fff;
-      padding: 10px;
-      height: 110px;
-    }
+    .navbar {
+  background-color: #505cdc;
+  height: 70px;
+  margin-top: -70px;
+}
+.navbar .logo {
+  float: left;
+  margin-top: -5px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+    .navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: white;
+}
+
     main {
       padding: 20px;
     }
-    header div{
-      display: inline-block;  
-    }
-
-    header img{
-        width: 100px;
-        height: 100px;
-
-    }
+    
 
     div h1{
       margin-bottom: -100px;
@@ -52,15 +66,36 @@
     .button:hover {
       background-color: #45a049;
     }
+
+footer {
+  margin-top: 7%;
+  background-color: #7023cd;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 6 px;
+}
+
+footer p{
+  size: 10px;
+}
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE4ImlYq3NrYSgO9hAGr_jJUoQS9DGfUQEw&amp;usqp=CAU" alt="Footer Logo"></div>
-      <div><h1>Rakesh eCommerce </h1></div>
-    </div>
-  </header>
+    <header>
+        <h1> Rakesh E-Com</h1>
+        <div class="navbar">
+          <a class="logo" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE4ImlYq3NrYSgO9hAGr_jJUoQS9DGfUQEw&amp;usqp=CAU" width="100px"></a>
+          <a href="https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/">Home</a>
+        </div>
+    </header>
+
   <main>
     <h1>About Us</h1>
     <p>Welcome to our eCommerce website! Our passionate team is dedicated to providing you with the best online shopping experience. We aim to offer a wide selection of high-quality products at competitive prices, delivered to your doorstep with speed and efficiency.</p>
@@ -70,6 +105,12 @@
     <p>Thank you for choosing us for your online shopping needs. Happy shopping!</p>
     <a href = "https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/Assets/Contact_Us"> <button class="button">Contact Us</button> </a>
   </main>
+
+  <footer>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE4ImlYq3NrYSgO9hAGr_jJUoQS9DGfUQEw&amp;usqp=CAU" alt="Footer Logo">
+    <p>© 2023 Rakesh Ecom. All rights reserved.</p>
+    <p> Designed and maintained by <b>RAKESH KUMAR THAKUR</b></p>
+  </footer>
   
 </body>
 </html>
