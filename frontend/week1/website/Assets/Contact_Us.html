@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t3.ftcdn.net/jpg/03/53/28/08/360_F_353280884_oyeOLzk0EyvfC4pvixbvcfA4s745SaX6.jpg');
+        }
+
+        footer {
+            background-color: #505cdc;
+            padding: 10px;
+            text-align: right;
+        }
+
+        footer img {
+            height: 30px;
+            margin: 5px;
+        } 
+
+        
+        
+
+        .contact-form {
+            max-width: 400px;
+            margin-top: 8%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: azure;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            
+        }
+        h2{
+          text-align: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/people/Rakesh-Kumar/pfbid0239NBJj9uLQtH8tZLNLHrQbtwuR29i74rYzB353JEEhX9qqDbKjsLDDevsd5MxXCBl/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook Logo">
+        </a>
+        <a href="https://www.instagram.com/rakesh_kumar1656/">
+        <img src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/rakesh-kumar-thakur-iitd/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfO3a88lm0jUmpfoXoouIg0gPhLr2KniYQg&usqp=CAU" alt="LinkedIn Logo"></a>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const formDataObj = Object.fromEntries(formData.entries());
+
+            // Here you can use formDataObj to send the data to your backend or perform other actions.
+            console.log(formDataObj);
+
+            // For this example, we'll just display an alert.
+            alert('Your message has been sent successfully!');
+        });
+    </script>
+</body>
+</html>
