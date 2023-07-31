@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
+        .navbar {
+  background-color: #505cdc;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.navbar .logo {
+  float: left;
+  padding: 14px 16px;
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -28,10 +52,10 @@
 
         .contact-form {
             max-width: 400px;
-            margin-top: 8%;
+            margin-top: 6%;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 8%;
+            margin-bottom: 5%;
             padding: 20px;
             border: 1px solid #ccc;
             background-color: azure;
@@ -63,7 +87,15 @@
     </style>
 </head>
 <body>
-   
+    <header>
+        <div class="navbar">
+          <a class="logo" href="https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE4ImlYq3NrYSgO9hAGr_jJUoQS9DGfUQEw&amp;usqp=CAU" width="100px"></a>
+          <a href="https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/Assets/Contact_Us">Contact Us</a>
+          <a href="https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/Assets/About">About</a>
+          <a href="https://rakeshrkt.github.io/summer-of-code-2023/frontend/week1/website/">Home</a>
+        </div>
+      </header>
+
     <div class="contact-form">
         <h2>Contact Us</h2>
         <form id="contactForm">
